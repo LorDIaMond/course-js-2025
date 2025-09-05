@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\Lessons\\01. Hello World. Data Types. Base Syntax\\Examples\\arithmetics-operations.js",
+            "runtimeExecutable": "C:/Program Files/nodejs/node.exe",
+            "console": "integratedTerminal"
+        }
+    ]
+}
