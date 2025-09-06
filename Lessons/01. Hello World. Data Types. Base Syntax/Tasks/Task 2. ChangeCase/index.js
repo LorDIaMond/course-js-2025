@@ -7,6 +7,7 @@ const changeCase = (str) => {
         else { result += char.toLowerCase(); }
     }
 
+    console.log(result);
     return result;
 };
 

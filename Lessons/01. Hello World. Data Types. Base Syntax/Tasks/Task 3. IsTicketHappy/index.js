@@ -10,6 +10,7 @@ const isTicketHappy = (numStr) => {
         else { secondSum += parseInt(numStr[i]); }
     }
 
+    console.log(firstSum === secondSum);
     return firstSum === secondSum;
 };
 
