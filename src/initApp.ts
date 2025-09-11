@@ -5,10 +5,12 @@ import type { IAppState } from './types';
 import mountVueApp from './utils/vueApp';
 
 interface IProps {
+    executeSelector: string;
     iframeSelector: string;
     lessonSelector: string;
     tasksSelector: string;
     vueAppSelector: string;
+    loggerSelector: string;
 }
 
 export default function initApp(payload: IProps) {
@@ -22,6 +24,7 @@ export default function initApp(payload: IProps) {
         iframeSelector: payload.iframeSelector,
         lessonSelector: payload.lessonSelector,
         tasksSelector: payload.tasksSelector,
+        executeSelector: payload.executeSelector,
         appState: state,
     });
 
@@ -30,7 +33,7 @@ export default function initApp(payload: IProps) {
     const url = new URL(window.location.href);
     state.activeLesson = url.searchParams.get('lesson') ?? '';
 
-    const loggerEl = document.querySelector('.app__logger')
+    const loggerEl = document.querySelector(payload.loggerSelector)
     console = new Proxy(console, {
         get(target, param) {
             if (param === 'log') {
@@ -50,7 +53,7 @@ export default function initApp(payload: IProps) {
                         }
 
                         div.appendChild(code);
-                        loggerEl.appendChild(div);
+                        loggerEl.appendChild(div)
                     }
                     target[param](...args);
                 };
