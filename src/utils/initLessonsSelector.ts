@@ -101,6 +101,13 @@ const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
 
         const module = await activeTaskData.loader();
 
+        if (Object.hasOwn(activeTaskData, 'taskData')) {
+            activeTaskData.taskData.then((result) => {
+                taskTextEl.style.display = '';
+                taskTextEl.querySelector('.app__task-content').innerHTML = result.default;
+            });
+        }
+
         if (activeTaskData.type === 'js') {
             elements.executeButton.style.display = '';
             executeModuleJs(module);
@@ -109,13 +116,6 @@ const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
                 activeTaskData.codeData.then((result) => {
                     taskCodeEl.style.display = '';
                     taskCodeEl.querySelector('.app__code-data').innerHTML = result.default;
-                });
-            }
-
-            if (Object.hasOwn(activeTaskData, 'taskData')) {
-                activeTaskData.taskData.then((result) => {
-                    taskTextEl.style.display = '';
-                    taskTextEl.querySelector('.app__task-content').innerHTML = result.default;
                 });
             }
 

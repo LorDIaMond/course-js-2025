@@ -27,7 +27,7 @@ const extractTaskId = (path: string) => {
         taskType: match?.[1] ?? 'Tasks',
         id: match?.[2] ?? '',
         num: match?.[3] ?? 0,
-        extension: match?.[5] ?? 'js',
+        extension: match?.[5] ?? 'vue',
     };
     return {
         ...taskData,
@@ -65,6 +65,7 @@ export const getTasksMap = (lessonsOptions: LessonOption[]) => {
                     ...extractTaskId(path),
                     type: 'html',
                     path: path.replace(/\/index\.\w*$/, '/'),
+                    taskData: tasksReadme[path.slice(0, path.length - 10) + 'README.md']()
                 });
             }
         }
@@ -75,6 +76,7 @@ export const getTasksMap = (lessonsOptions: LessonOption[]) => {
                     ...extractTaskId(path),
                     type: 'vue',
                     path: path.replace(/\/index\.\w*$/, '/'),
+                    taskData: tasksReadme[path.slice(0, path.length - 7) + 'README.md']()
                 });
             }
         }
