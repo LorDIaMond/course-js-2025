@@ -40,9 +40,14 @@ export default function initApp(payload: IProps) {
                         div.classList.add('app__logger-row');
 
                         const code = document.createElement('code');
-                        code.textContent = typeof arg === 'string'
-                            ? arg
-                            : JSON.stringify(arg);
+                        try {
+                            code.textContent = typeof arg === 'string'
+                                ? arg
+                                : JSON.stringify(arg, null, '\t');
+                        } catch (err) {
+                            console.error(err);
+                            code.textContent = 'Ошибка при сериализации данных';
+                        }
 
                         div.appendChild(code);
                         loggerEl.appendChild(div);
