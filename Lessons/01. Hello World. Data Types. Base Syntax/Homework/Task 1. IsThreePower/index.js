@@ -1,7 +1,13 @@
 const isThreePower = (num) => {
-    // Начало
+    if (typeof num !== 'number') {
+        throw new TypeError('Аргумент должен быть числом');
+    }
 
-    // Конец
+    while (num >= 3) {
+        num /= 3;
+    }
+    return num === 1;
+
 };
 
 export default isThreePower;
