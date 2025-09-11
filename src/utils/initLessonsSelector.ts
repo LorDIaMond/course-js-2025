@@ -17,7 +17,20 @@ let lastModule: any = null;
 const executeModuleJs = (module: any) => {
     lastModule = module;
     if (Object.hasOwn(module, 'default')) {
-        const payload = module.payload ?? (window as any).payload ?? [];
+        let payload;
+        const payloadEl = document.querySelector('.app__payload-input') as HTMLInputElement;
+        if (payloadEl.value.length > 0) {
+            try {
+                payload = JSON.parse(`[${ payloadEl.value }]`);
+                payloadEl.value = '';
+            } catch (err) {
+                console.error(err);
+                window.alert('Ошибка входных данных');
+            }
+        } else {
+            payload = module.payload ?? (window as any).payload ?? [];
+        }
+
         const result = (
             module.default.prototype
             && module.default.prototype.constructor === module.default
@@ -60,6 +73,13 @@ const initListeners = (state: IAppState, elements: IElements, url: URL) => {
 
     elements.executeButton.addEventListener('click', () => {
         if (lastModule !== null) {
+            executeModuleJs(lastModule);
+        }
+    });
+
+    const payloadEl = document.querySelector('.app__payload-input') as HTMLInputElement;
+    payloadEl.addEventListener('keyup', (event: KeyboardEvent) => {
+        if (event.key === 'Enter' && lastModule !== null) {
             executeModuleJs(lastModule);
         }
     });

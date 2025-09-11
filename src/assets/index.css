@@ -17,7 +17,8 @@ body {
 }
 
 .app__header-execute-button,
-.app__selector-wrapper select {
+.app__selector-wrapper select,
+.app__payload-input {
     padding: 4px 8px;
 
     font-size: 12px;
@@ -83,6 +84,9 @@ body {
 }
 
 .app__logger-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
     padding: 4px 6px;
 
     border-radius: 4px;
@@ -107,4 +111,16 @@ body {
     white-space: pre;
     border: 2px solid rgba(159, 188, 255, 0.4);
     border-radius: 8px;
+}
+
+.app__header-execute-button {
+    margin-top: 12px;
+}
+
+.app__task-payload {
+    margin-bottom: 12px;
+}
+
+.app__payload-input {
+    min-width: 210px;
 }
