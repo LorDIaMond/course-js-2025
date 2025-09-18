@@ -2,6 +2,8 @@ import { watch } from 'vue';
 import { getTasksMap, getLessonsOptions } from './getSelectorOptions';
 
 import type { IAppState } from '../types';
+import { marked } from 'marked';
+import hljs from 'highlight.js';
 
 const entries = getLessonsOptions();
 const taskMap = getTasksMap(entries);
@@ -122,9 +124,13 @@ const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
         const module = await activeTaskData.loader();
 
         if (Object.hasOwn(activeTaskData, 'taskData')) {
-            activeTaskData.taskData.then((result) => {
+            activeTaskData.taskData.then(async (result) => {
                 taskTextEl.style.display = '';
-                taskTextEl.querySelector('.app__task-content').innerHTML = result.default;
+                taskTextEl.querySelector('.app__task-content').innerHTML = await marked.parse(result.default);
+                taskTextEl.querySelector('.app__task-content').querySelectorAll('code').forEach((el) => {
+                    el.classList.add('language-javascript');
+                    hljs.highlightElement(el);
+                });
             });
         }
 
@@ -135,7 +141,8 @@ const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
             if (Object.hasOwn(activeTaskData, 'codeData')) {
                 activeTaskData.codeData.then((result) => {
                     taskCodeEl.style.display = '';
-                    taskCodeEl.querySelector('.app__code-data').innerHTML = result.default;
+                    taskCodeEl.querySelector('.app__code-data').innerHTML = `<pre><code class="language-javascript">${ result.default }</code></pre>`;
+                    hljs.highlightElement(taskCodeEl.querySelector('.app__code-data code'));
                 });
             }
 
