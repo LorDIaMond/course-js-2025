@@ -10,6 +10,8 @@ type LessonOption = {
 
 const lessonModules = import.meta.glob<LessonModule>('../../Lessons/*/README.md', { query: '?raw' });
 const allTasks = import.meta.glob('../../Lessons/*/{Tasks,Homework}/*/index.{js,ts}');
+const allTasksRaw = import.meta.glob('../../Lessons/*/{Tasks,Homework}/*/index.{js,ts}', { query: '?raw' });
+const tasksReadme = import.meta.glob('../../Lessons/*/{Tasks,Homework}/*/README.md', { query: '?raw' });
 const allHtml = import.meta.glob('../../Lessons/*/{Tasks,Homework}/**/index.html', { query: '?url' });
 const allApps = import.meta.glob('../../Lessons/*/{Tasks,Homework}/*/App.vue', { query: '?url' });
 
@@ -21,11 +23,15 @@ export const getLessonsOptions = () => Object.entries(lessonModules).map(([path,
 const extractTaskId = (path: string) => {
     const match = path.match(/\.\.\/Lessons\/.*\/(Tasks|Homework)\/(Task (\d+)\. .*)\/(index\.(js|ts|html)|App\.vue)$/);
 
-    return {
+    const taskData = {
         taskType: match?.[1] ?? 'Tasks',
         id: match?.[2] ?? '',
         num: match?.[3] ?? 0,
-        extension: match?.[5] ?? 'js',
+        extension: match?.[5] ?? 'vue',
+    };
+    return {
+        ...taskData,
+        id: `${ taskData.id } | ${ taskData.taskType } | ${ taskData.extension }`,
     };
 };
 
@@ -47,6 +53,8 @@ export const getTasksMap = (lessonsOptions: LessonOption[]) => {
                     ...extractTaskId(path),
                     type: 'js',
                     path: path.replace(/\/index\.\w$/, ''),
+                    codeData: allTasksRaw[path](),
+                    taskData: tasksReadme[path.slice(0, path.length - 8) + 'README.md']()
                 });
             }
         }
@@ -57,6 +65,7 @@ export const getTasksMap = (lessonsOptions: LessonOption[]) => {
                     ...extractTaskId(path),
                     type: 'html',
                     path: path.replace(/\/index\.\w*$/, '/'),
+                    taskData: tasksReadme[path.slice(0, path.length - 10) + 'README.md']()
                 });
             }
         }
@@ -67,6 +76,7 @@ export const getTasksMap = (lessonsOptions: LessonOption[]) => {
                     ...extractTaskId(path),
                     type: 'vue',
                     path: path.replace(/\/index\.\w*$/, '/'),
+                    taskData: tasksReadme[path.slice(0, path.length - 7) + 'README.md']()
                 });
             }
         }

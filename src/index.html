@@ -3,64 +3,29 @@
 <head>
     <meta charset="UTF-8" />
     <title>Выбор урока</title>
-    <style>
-        html,
-        body {
-            font-size: 14px;
-            line-height: 1.4;
-        }
-
-        .app__selector-wrapper {
-            margin-bottom: 8px;
-        }
-
-        #task-body[src=""] {
-            display: none;
-        }
-
-        #task-body {
-            border: none;
-            width: 100%;
-            height: 100vh;
-        }
-
-        .app__task-body-wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .app__task-body-wrapper:has(#task-body[src*="/Lessons/"]) {
-            border: 1px solid rgba(111, 111, 111, 0.4);
-        }
-
-        .app__logger {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-            padding-top: 8px;
-
-            border-top: 1px solid grey;
-        }
-
-        .app__logger-row {
-            padding: 4px 6px;
-            background-color: rgba(221, 221, 221, 0.6);
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/index.css">
 </head>
 <body class="app">
-    <h1>Выберите урок</h1>
-    <div class="app__selector-wrapper">
-        <select id="lesson-selector">
-            <option value="">-- Выберите урок --</option>
-        </select>
+    <header class="app__header">
+        <div class="app__selector-wrapper">
+            <p class="app__selector-title">Урок:</p>
+            <p class="app__selector-title">Задача:</p>
+            <select id="lesson-selector">
+                <option value="">-- Выберите урок --</option>
+            </select>
 
-        <select
-                id="task-selector"
-                style="display: none;"
-        >
-            <option value="">-- Выберите задачу --</option>
-        </select>
+            <select
+                    id="task-selector"
+                    style="display: none;"
+            >
+                <option value="">-- Выберите задачу --</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="app__task-text">
+        <h1>Задача</h1>
+        <div class="app__task-content"></div>
     </div>
 
     <div class="app__task-body-wrapper">
@@ -69,10 +34,34 @@
 
     <div id="vue-app"></div>
 
+    <div class="app__task-code">
+        <div class="app__task-code-header">
+            <h1>Код программы</h1>
+        </div>
+        <div class="app__task-payload">
+            <input
+                class="app__payload-input"
+                placeholder="аргумент 1, аргумент 2, аргумент 3 ..."
+            />
+        </div>
+        <div class="app__code-data"></div>
+        <div>
+            <button
+                id="execute-button"
+                class="app__header-execute-button"
+            >
+                Запустить скрипт
+            </button>
+        </div>
+    </div>
+
     <div class="app__logger">
-        <h1 class="app__logger-title">
+        <h1>
             Логи консоли:
         </h1>
+        <div class="app__logger-content">
+
+        </div>
     </div>
 
     <script type="module">
@@ -83,6 +72,8 @@
             lessonSelector: '#lesson-selector',
             tasksSelector: '#task-selector',
             vueAppSelector: '#vue-app',
+            executeSelector: '#execute-button',
+            loggerSelector: '.app__logger-content',
         });
     </script>
 </body>
