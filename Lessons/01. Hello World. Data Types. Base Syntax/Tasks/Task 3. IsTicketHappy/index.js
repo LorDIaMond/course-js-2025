@@ -1,15 +1,14 @@
 const isTicketHappy = (numStr) => {
-    let digits = ticket.split('');
-    let length = digits.length;
+    const digits = numStr.split('');
+    const length = digits.length;
 
     if (length % 2 !== 0) {
         return false;
     }
 
-    let half = length / 2;
+    const half = length / 2;
     let sumFirstHalf = 0;
     let sumSecondHalf = 0;
-
 
     for (let i = 0; i < half; i++) {
         sumFirstHalf += parseInt(digits[i], 10);

@@ -1,5 +1,6 @@
-const sinon = require('sinon');
 import helloWorld from './index.js';
+
+const sinon = require('sinon');
 
 describe('01.c.0 helloWorld', () => {
     let spy;

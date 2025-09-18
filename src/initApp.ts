@@ -30,7 +30,7 @@ export default function initApp(payload: IProps) {
     const url = new URL(window.location.href);
     state.activeLesson = url.searchParams.get('lesson') ?? '';
 
-    const loggerEl = document.querySelector('.app__logger')
+    const loggerEl = document.querySelector('.app__logger');
     console = new Proxy(console, {
         get(target, param) {
             if (param === 'log') {

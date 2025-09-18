@@ -7,24 +7,15 @@ if (number > 10) {
     console.log('Ну и зачем здесь эти числа вообще...');
 }
 
-
-
-
 // оператор && - "И"
 if (number > 10 && number < 5) {
     console.log('Число больше десяти И меньше пяти');
 }
 
-
-
-
 // оператор || - "Или"
 if (number > 10 || number < 5) {
     console.log('Число больше десяти ИЛИ меньше пяти');
 }
-
-
-
 
 // switch/case
 const number = 42;

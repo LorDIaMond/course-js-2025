@@ -1,5 +1,6 @@
+import itisCool from './index.js';
+
 const sinon = require('sinon');
-import itisCool from './index';
 
 describe('01.c.1 itisCool', () => {
     const itis = 'Itis';

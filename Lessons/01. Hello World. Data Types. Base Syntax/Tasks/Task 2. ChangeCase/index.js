@@ -1,9 +1,9 @@
 const changeCase = (str) => {
-    let chars = str.split('');  // разбиваем строку на массив символов
-    let result = '';            // будем собирать результат посимвольно
+    const chars = str.split(''); // разбиваем строку на массив символов
+    let result = ''; // будем собирать результат посимвольно
 
     for (let i = 0; i < chars.length; i++) {
-        let char = chars[i];
+        const char = chars[i];
 
         if (char >= 'a' && char <= 'z') {
             result += char.toUpperCase();

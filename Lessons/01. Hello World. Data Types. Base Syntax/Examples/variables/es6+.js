@@ -2,7 +2,7 @@
 
 function logDate() {
     for (let i = 0; i < 10; i++) {
-        let text = 'i = ' + i;
+        const text = 'i = ' + i;
     }
     console.log(text);
 }
@@ -18,13 +18,12 @@ logDate1();
 
 // const
 
-
 const name = 'Justine';
 let surname = 'Henin';
 
 name = 'Maria';
 surname = 'Sharapova';
 
-const letters = [ 'a', 'b', 'c' ];
+const letters = ['a', 'b', 'c'];
 letters[3] = 'e';
 console.log(letters);
