@@ -11,7 +11,7 @@
 - **Создаём свою ветку**
 - `git pull`
 - `git checkout -b <lastName> origin/main`
-- `git push -u <lastName> origin/main`
+- `git push -u origin <lastName>`
 - Теперь у вас есть сбственная ветка по данному курсу, в которой вы будете работать
 - Для получения обновлений курса, есть команда
 - `yarn update`
