@@ -1,6 +1,6 @@
 const moreFunction = (number) => {
     return (numbersArray) => {
-        return numbersArray.map(func => func / number);
+        return numbersArray.map(elem => elem / number);
     };
 };
 

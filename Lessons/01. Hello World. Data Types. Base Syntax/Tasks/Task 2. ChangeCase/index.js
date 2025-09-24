@@ -1,6 +1,6 @@
 const changeCase = (str) => {
-    const chars = str.split(''); // разбиваем строку на массив символов
-    let result = ''; // будем собирать результат посимвольно
+    const chars = str.split('');
+    let result = '';
 
     for (let i = 0; i < chars.length; i++) {
         const char = chars[i];
@@ -10,7 +10,7 @@ const changeCase = (str) => {
         } else if (char >= 'A' && char <= 'Z') {
             result += char.toLowerCase();
         } else {
-            result += char; // не-буквы остаются как есть
+            result += char;
         }
     }
 
