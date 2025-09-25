@@ -100,15 +100,12 @@ body {
 }
 
 .app__task-content {
-    white-space: pre;
-
     border: 2px solid rgba(186, 191, 206, 0.4);
     border-radius: 8px;
 }
 
 .app__code-data {
     font-family: monospace;
-    white-space: pre;
     border: 2px solid rgba(159, 188, 255, 0.4);
     border-radius: 8px;
 }
