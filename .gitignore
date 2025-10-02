@@ -7,3 +7,4 @@ yarn.lock
 pnpm.lock
 dist
 tsconfig.tsbuildinfo
+.DS_Store
