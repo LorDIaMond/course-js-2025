@@ -25,10 +25,7 @@ class CityGame {
 
         this.currentPlayerIndex = (this.currentPlayerIndex + 1) % this.players.length;
 
-        return {
-            cities: [...this.usedCities],
-            currentPlayer: this.getCurrentPlayer(),
-        };
+        return [...this.usedCities];
     }
 
     isValidMove(city) {
@@ -64,7 +61,7 @@ class CityGame {
         this.currentPlayerIndex = 0;
         this.isGameOver = false;
         this.winner = null;
-        return 'The game restarted!';
+        return 'The game has been restarted!';
     }
 
     getCurrentPlayer() {

@@ -6,8 +6,8 @@ class Pyramid {
     }
 
     getVolume() {
-        const volume = (this.height / 3) * (
-            this.baseArea1 + this.baseArea2 + Math.sqrt(this.baseArea1 * this.baseArea2)
+        const volume = (this.h / 3) * (
+            this.s1 + this.s2 + Math.sqrt(this.s1 * this.s2)
         );
         return volume;
     }
