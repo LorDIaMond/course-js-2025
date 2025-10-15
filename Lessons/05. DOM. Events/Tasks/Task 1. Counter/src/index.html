@@ -16,11 +16,13 @@
         >
     </head>
     <body>
-        <div class="main"></div>
+        <div class="main">
+            <button id="main__button" type="button" onclick="setCounter()">Количество нажатий: 0</button>
+        </div>
     </body>
     <script type="module" src="../index.js"></script>
     <script type="module">
         import setCounter from '../index.js';
-        setCounter();
+        window.setCounter = setCounter;
     </script>
 </html>

@@ -1,3 +1,21 @@
 .tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    border: 2px solid black;
+    width: 450px;
+    height: 450px;
+    margin: 50px auto;
+}
+.cell {
+    display: flex;
+    background-color: #F5F5F5;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
 
+.cell img {
+    width: 60%;
+    height: 60%;
 }

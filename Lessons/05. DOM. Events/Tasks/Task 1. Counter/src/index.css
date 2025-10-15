@@ -1,10 +1,25 @@
+body {
+    display: flex;
+    background-color: #e0e0e0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Важно! Высота всего экрана */
+    margin: 0;
+}
+
 .main {
     padding: 30px;
-    margin: 40px;
     font-family: Verdana, Tahoma, sans-serif;
     background: #f1f1f1;
     border-radius: 10px;
+    border: 2px solid red;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 330px;
+}
+
+#main__button {
+    border-radius: 10px;
+    border: 2px solid red;
 }

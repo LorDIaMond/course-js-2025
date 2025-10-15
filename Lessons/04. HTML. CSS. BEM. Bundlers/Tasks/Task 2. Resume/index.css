@@ -1,7 +1,79 @@
-.resume {
-    padding: 10px;
-    margin: 20px;
-    font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
-    border-radius: 10px;
+p {
+    font-size: 20px;
 }
+
+body {
+    padding: 20px;
+    background-color: #F0F8FF;
+}
+
+.resume {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: auto;
+    max-width: 900px;
+    padding: 50px;
+    background: #FCFCFC;
+    border-radius: 10px;
+    border: 2px solid #F5F5F5;
+    box-shadow: 10px 10px 20px rgb(0 17 51 / 24%), 10px 10px 20px rgb(0 17 51 / 32%);
+    box-sizing: border-box;
+}
+
+h1.resume__header-title {
+    font-size: 36px;
+    padding-bottom: 0;
+    font-weight: 400;
+}
+
+.resume__header {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume__main-header {
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 1px solid #545960;
+    padding-bottom: 0;
+}
+
+.resume__header-info-section {
+    flex-grow: 1;
+}
+
+.resume__footer {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.resume__footer-item {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.resume__main-experience {
+    display: flex;
+}
+
+.resume__main-experience-item {
+    width: 50%;
+}
+
+.resume__main-experience-item--last {
+    margin-left: 30px;
+}
+
+.resume__main-interests li {
+    font-size: 20px;
+}
+
+.resume__header-link {
+    font-size: 20px;
+}
+
