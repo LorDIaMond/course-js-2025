@@ -1,5 +1,7 @@
-import fetchMock from "jest-fetch-mock";
+import createFetchMock from 'vitest-fetch-mock';
+import { vi } from 'vitest';
 
+const fetchMock = createFetchMock(vi);
 fetchMock.enableMocks();
 
 import getCharacterData from './index';

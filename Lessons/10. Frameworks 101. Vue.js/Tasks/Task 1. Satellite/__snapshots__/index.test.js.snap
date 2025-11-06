@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`10.c.1 Satellite > 10.c.1.2 with radius 42000k 1`] = `
+<div
+  class="satellite"
+>
+  <div
+    class="satellite__radius"
+  >
+    <span>
+      Радиус орбиты спутника:
+    </span>
+    <input
+      class="form-control"
+      type="text"
+    />
+    <span>
+      км
+    </span>
+  </div>
+  <div
+    class="satellite__speed"
+  >
+    <h3>
+      Требуемая скорость спутника:
+    </h3>
+    <div>
+      Infinity м/с 
+    </div>
+    <img
+      src="https://mediasat.info/wp-content/uploads/2015/06/sat-orbit.jpg"
+    />
+  </div>
+</div>
+`;

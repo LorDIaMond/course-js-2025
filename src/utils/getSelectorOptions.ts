@@ -65,7 +65,7 @@ export const getTasksMap = (lessonsOptions: LessonOption[]) => {
                     ...extractTaskId(path),
                     type: 'html',
                     path: path.replace(/\/index\.\w*$/, '/'),
-                    taskData: tasksReadme[path.slice(0, path.length - 10) + 'README.md']()
+                    taskData: tasksReadme[path.slice(0, path.length - 10) + 'README.md']?.(),
                 });
             }
         }

@@ -2,9 +2,11 @@
  * @jest-environment jsdom
  */
 
-import fetchMock from "jest-fetch-mock";
-import { waitFor } from "@testing-library/dom";
+import createFetchMock from 'vitest-fetch-mock';
+import { vi } from 'vitest';
+import { waitFor } from '@testing-library/dom';
 
+const fetchMock = createFetchMock(vi);
 fetchMock.enableMocks();
 
 import { MEMES } from './__fixtures__/responses';
@@ -18,7 +20,7 @@ describe('08.c.2 giveMeMeme', () => {
 
     afterEach(() => {
         jest.spyOn(global.Math, 'random').mockRestore();
-    })
+    });
 
     it('08.c.2.1 get meme with id 87743020', async () => {
         jest.useFakeTimers();
@@ -37,7 +39,7 @@ describe('08.c.2 giveMeMeme', () => {
         const button = document.querySelector('button');
         button.click();
 
-        await waitFor(() =>  expect(document.querySelector('img') !== null).toBe(true));
+        await waitFor(() => expect(document.querySelector('img') !== null).toBe(true));
 
         const imgElement = document.querySelector('img');
         const imgUrl = imgElement.getAttribute('src');
