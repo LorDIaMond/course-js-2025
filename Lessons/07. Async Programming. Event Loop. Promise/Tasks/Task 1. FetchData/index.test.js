@@ -41,7 +41,7 @@ describe('07.c.1 fetchData', () => {
 
         simulateInputValueChange('четыре! ');
         jest.advanceTimersByTime(1100);
-        expect(window.alert).toBeCalledWith('Ищем: раз два три четыре! ');
+        expect(window.alert).toBeCalledWith('Ищем: раз два три четыре!');
 
 
         simulateInputValueChange('пять ');
