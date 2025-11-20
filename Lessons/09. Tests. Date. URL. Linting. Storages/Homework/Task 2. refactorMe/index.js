@@ -1,23 +1,38 @@
-const findParamsInUrl = (urlStr) => {
-    return new URL(urlStr).searchParams;
-}
+const SPECIAL_SYMBOLS = {
+    coma: ',',
+    dot: '.',
+    space: ' ',
+    semicolon: ';',
+    apostrophe: "'",
+};
 
-const replaceKeyWords = (str) => {
-    return str
-        .replaceAll('text=', ' ')
-        .replaceAll('coma', ',')
-        .replaceAll('dot', '.')
-        .replaceAll('space', ' ')
-        .replaceAll('semicolon', ';')
-        .replaceAll('apostrophe', "'")
-        .replaceAll('&', '')
-        .replaceAll('=', '')
-        .replaceAll("' ", "'");
-}
+const getSymbolForParam = (key, value) => {
+    if (key === 'text') {
+        return ' ' + value;
+    }
+    if (key in SPECIAL_SYMBOLS) {
+        return SPECIAL_SYMBOLS[key];
+    }
+
+    return '';
+};
 
 const getTextFromUrl = (url) => {
-    const params = findParamsInUrl(url);
-    return replaceKeyWords(params.toString());
+    const params = new URL(url).searchParams;
+    let str = params.toString();
+
+    return str
+        .replace(/text=/g, ' ')
+        .replace(/coma/g, ',')
+        .replace(/dot/g, '.')
+        .replace(/space/g, ' ')
+        .replace(/semicolon/g, ';')
+        .replace(/apostrophe/g, "'")
+        .replace(/&/g, '')
+        .replace(/=/g, '')
+        .replace(/' /g, "'");
 };
+
+
 
 export default getTextFromUrl;
