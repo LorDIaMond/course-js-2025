@@ -1,6 +1,6 @@
 <template>
     <div class="icons">
-        <ItisIcon :icon-type="iconType"/>
+        <ItisIcon :icon-type="iconType" />
         <span class="icons__type">
             I'm {{ iconType }}
         </span>

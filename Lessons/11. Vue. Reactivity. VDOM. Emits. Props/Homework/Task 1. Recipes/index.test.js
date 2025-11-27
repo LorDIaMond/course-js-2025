@@ -4,6 +4,7 @@
 
 import { mount } from '@vue/test-utils';
 import Recipes from './App.vue';
+import { nextTick } from 'vue';
 
 describe('11.h.1 Recipes', () => {
     const wrapper = mount(Recipes);
@@ -31,7 +32,7 @@ describe('11.h.1 Recipes', () => {
         const addButton = wrapper.find('.recipe-form__add-button');
         await addButton.trigger('click');
 
-        wrapper.vm.$nextTick(() => {
+        nextTick(() => {
             expect(wrapper.element).toMatchSnapshot();
         });
     });
@@ -59,7 +60,7 @@ describe('11.h.1 Recipes', () => {
         const addButton = wrapper.find('.recipe-form__add-button');
         await addButton.trigger('click');
 
-        wrapper.vm.$nextTick(() => {
+        nextTick(() => {
             expect(wrapper.element).toMatchSnapshot();
         });
     });
@@ -68,7 +69,7 @@ describe('11.h.1 Recipes', () => {
         const removeFirstRecipeButton = wrapper.findAll('.card-body__remove-button').at(0);
         await removeFirstRecipeButton.trigger('click');
 
-        wrapper.vm.$nextTick(() => {
+        nextTick(() => {
             expect(wrapper.element).toMatchSnapshot();
         });
     });
@@ -77,7 +78,7 @@ describe('11.h.1 Recipes', () => {
         const removeFirstRecipeButton = wrapper.findAll('.card-body__remove-button').at(0);
         await removeFirstRecipeButton.trigger('click');
 
-        wrapper.vm.$nextTick(() => {
+        nextTick(() => {
             expect(wrapper.element).toMatchSnapshot();
         });
     });
