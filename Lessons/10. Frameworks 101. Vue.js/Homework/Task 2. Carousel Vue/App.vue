@@ -55,3 +55,24 @@ export default {
   }
 };
 </script>
+
+<style>
+.carousel {
+    background: #f6f6f6;
+    display: block;
+    padding: 30px;
+    margin: 40px;
+    font-family: Verdana, Tahoma, sans-serif;
+    border-radius: 10px;
+    align-items: center;
+    width: 1000px;
+}
+
+.carousel-item {
+    min-height: 325px;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+</style>

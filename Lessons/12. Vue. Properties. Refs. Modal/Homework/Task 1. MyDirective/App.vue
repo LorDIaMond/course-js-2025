@@ -8,49 +8,24 @@
             placeholder="Жизнь"
         />
         <div class="quotes__container">
-            <template v-for="quote in quotes">
-                <!--Начало-->
-                <div class="quotes__quote-block" v-show="getVisibility(quote.text)">
-                    <div
-                        class="quotes__quote-text"
-                        v-replace:[searchText]="{searchText}">
-                        "{{ quote.text }}"
-                    </div>
-                    <div
-                        class="quotes__quote-author">
-                        (c) {{ quote.author }}
-                    </div>
-                </div>
-                <!--Конец-->
-            </template>
+            <!--Начало-->
+            <!--Конец-->
         </div>
     </div>
 </template>
-0 1 2 3 4
+
 <script>
 export default {
     name: 'MyDirective',
-    // Начало
-    directives: {
-        replace: {
-            update: (element, bindings) => {
-                if (element.textContent.includes(bindings.arg)) {
-                    const elementText = element.textContent;
-                    element.innerHTML = elementText.replaceAll(bindings.arg, '<span>' + bindings.arg + '</span>');
-                }
-            }
-        }
-    },
-    // Конец
-    methods: {
-        getVisibility(text) {
-            return text.includes(this.searchText);
-        },
-    },
-    data() {
+    setup() {
+        const searchText = ref('');
+
         return {
-            searchText: '',
-            quotes: [
+            getVisibility(text) {
+                return text.includes(searchText.value);
+            },
+            searchText,
+            quotes: ref([
                 {
                     id: 1,
                     text: 'Настойчивость очень важна. Вы не должны сдаваться, если только не вынуждены сдаться.',
@@ -132,7 +107,7 @@ export default {
                     author: 'Никола Тесла',
                 },
 
-            ],
+            ]),
         };
     },
 };

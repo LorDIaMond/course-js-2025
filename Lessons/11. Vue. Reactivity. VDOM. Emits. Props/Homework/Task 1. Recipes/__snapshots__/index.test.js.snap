@@ -1,12 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[` 1`] = `
-<div
-  class="recipes"
-/>
-`;
-
-exports[`11.h.1 Recipes 11.h.1.3 add first recipe 1`] = `
+exports[`11.h.1 Recipes > 11.h.1.3 add first recipe 1`] = `
 <div
   class="recipes"
 >
@@ -14,168 +8,125 @@ exports[`11.h.1 Recipes 11.h.1.3 add first recipe 1`] = `
     class="recipe-form"
   >
     <h3>
-      
-        Создать новый рецепт
-    
+       Создать новый рецепт 
     </h3>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Название нового рецепта
-        
+         Название нового рецепта 
       </label>
-       
       <input
         class="form-control recipe-form__name"
         type="text"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Ингредиенты
-        
+         Ингредиенты 
       </label>
-       
       <textarea
         class="form-control recipe-form__ingredients"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Последовательность действий
-        
+         Последовательность действий 
       </label>
-       
       <textarea
         class="form-control recipe-form__recipe-text"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Время приготовления
-        
+         Время приготовления 
       </label>
-       
       <select
         class="form-select recipe-form__cook-time"
       >
+        
         <option
           value="1"
         >
-          
-                5 минут
-            
+          5 минут
         </option>
         <option
           value="2"
         >
-          
-                10 минут
-            
+          10 минут
         </option>
         <option
           value="3"
         >
-          
-                15 минут
-            
+          15 минут
         </option>
         <option
           value="4"
         >
-          
-                20 минут
-            
+          20 минут
         </option>
         <option
           value="5"
         >
-          
-                30 минут
-            
+          30 минут
         </option>
         <option
           value="6"
         >
-          
-                40 минут
-            
+          40 минут
         </option>
         <option
           value="7"
         >
-          
-                50 минут
-            
+          50 минут
         </option>
         <option
           value="8"
         >
-          
-                1 час
-            
+          1 час
         </option>
         <option
           value="9"
         >
-          
-                1,5 часа
-            
+          1,5 часа
         </option>
         <option
           value="10"
         >
-          
-                2 часа
-            
+          2 часа
         </option>
         <option
           value="11"
         >
-          
-                2,5 часа
-            
+          2,5 часа
         </option>
         <option
           value="12"
         >
-          
-                3 часа
-            
+          3 часа
         </option>
         <option
           value="13"
         >
-          
-                Бесконечность
-            
+          Бесконечность
         </option>
+        
       </select>
     </div>
-     
     <div
       class="recipe-form__block"
     >
@@ -183,38 +134,29 @@ exports[`11.h.1 Recipes 11.h.1.3 add first recipe 1`] = `
         class="form-check-input"
         type="checkbox"
       />
-       
       <label
         class="form-check-label"
       >
-        
-            Вегетарианское блюдо
-        
+         Вегетарианское блюдо 
       </label>
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <button
         class="btn btn-dark recipe-form__add-button"
       >
-        
-            Добавить рецепт
-        
+         Добавить рецепт 
       </button>
     </div>
   </div>
-   
   <div
     class="recipe-container"
   >
     <h3>
-      
-        Мои рецепты
-    
+       Мои рецепты 
     </h3>
-     
+    
     <div
       class="card"
     >
@@ -225,11 +167,8 @@ exports[`11.h.1 Recipes 11.h.1.3 add first recipe 1`] = `
           class="card-body__header"
         >
           <h4>
-            
-                        Борщ классический
-                    
+            Борщ классический
           </h4>
-           
           <svg
             id="Layer_1"
             viewBox="0 0 463 463"
@@ -245,9 +184,7 @@ exports[`11.h.1 Recipes 11.h.1.3 add first recipe 1`] = `
               </g>
             </g>
           </svg>
-          
-                    Нет
-                    
+           Нет 
           <svg
             fill="none"
             height="16"
@@ -262,7 +199,6 @@ exports[`11.h.1 Recipes 11.h.1.3 add first recipe 1`] = `
               stroke="#1F1F1F"
               stroke-width="1.5"
             />
-             
             <path
               d="M8 4.5V8H10"
               stroke="#1F1F1F"
@@ -271,28 +207,22 @@ exports[`11.h.1 Recipes 11.h.1.3 add first recipe 1`] = `
               stroke-width="1.5"
             />
           </svg>
-          
-                    2 часа
-                
+           2 часа
         </div>
-        
-                Ингредиенты:
-                Говядина, картофель, капуста, лук
-                
+         Ингредиенты: Говядина, картофель, капуста, лук 
         <button
           class="btn btn-light card-body__remove-button"
         >
-          
-                    Удалить рецепт
-                
+           Удалить рецепт 
         </button>
       </div>
     </div>
+    
   </div>
 </div>
 `;
 
-exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
+exports[`11.h.1 Recipes > 11.h.1.4 add second recipe 1`] = `
 <div
   class="recipes"
 >
@@ -300,168 +230,125 @@ exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
     class="recipe-form"
   >
     <h3>
-      
-        Создать новый рецепт
-    
+       Создать новый рецепт 
     </h3>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Название нового рецепта
-        
+         Название нового рецепта 
       </label>
-       
       <input
         class="form-control recipe-form__name"
         type="text"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Ингредиенты
-        
+         Ингредиенты 
       </label>
-       
       <textarea
         class="form-control recipe-form__ingredients"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Последовательность действий
-        
+         Последовательность действий 
       </label>
-       
       <textarea
         class="form-control recipe-form__recipe-text"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Время приготовления
-        
+         Время приготовления 
       </label>
-       
       <select
         class="form-select recipe-form__cook-time"
       >
+        
         <option
           value="1"
         >
-          
-                5 минут
-            
+          5 минут
         </option>
         <option
           value="2"
         >
-          
-                10 минут
-            
+          10 минут
         </option>
         <option
           value="3"
         >
-          
-                15 минут
-            
+          15 минут
         </option>
         <option
           value="4"
         >
-          
-                20 минут
-            
+          20 минут
         </option>
         <option
           value="5"
         >
-          
-                30 минут
-            
+          30 минут
         </option>
         <option
           value="6"
         >
-          
-                40 минут
-            
+          40 минут
         </option>
         <option
           value="7"
         >
-          
-                50 минут
-            
+          50 минут
         </option>
         <option
           value="8"
         >
-          
-                1 час
-            
+          1 час
         </option>
         <option
           value="9"
         >
-          
-                1,5 часа
-            
+          1,5 часа
         </option>
         <option
           value="10"
         >
-          
-                2 часа
-            
+          2 часа
         </option>
         <option
           value="11"
         >
-          
-                2,5 часа
-            
+          2,5 часа
         </option>
         <option
           value="12"
         >
-          
-                3 часа
-            
+          3 часа
         </option>
         <option
           value="13"
         >
-          
-                Бесконечность
-            
+          Бесконечность
         </option>
+        
       </select>
     </div>
-     
     <div
       class="recipe-form__block"
     >
@@ -469,38 +356,29 @@ exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
         class="form-check-input"
         type="checkbox"
       />
-       
       <label
         class="form-check-label"
       >
-        
-            Вегетарианское блюдо
-        
+         Вегетарианское блюдо 
       </label>
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <button
         class="btn btn-dark recipe-form__add-button"
       >
-        
-            Добавить рецепт
-        
+         Добавить рецепт 
       </button>
     </div>
   </div>
-   
   <div
     class="recipe-container"
   >
     <h3>
-      
-        Мои рецепты
-    
+       Мои рецепты 
     </h3>
-     
+    
     <div
       class="card"
     >
@@ -511,11 +389,8 @@ exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
           class="card-body__header"
         >
           <h4>
-            
-                        Борщ классический
-                    
+            Борщ классический
           </h4>
-           
           <svg
             id="Layer_1"
             viewBox="0 0 463 463"
@@ -531,9 +406,7 @@ exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
               </g>
             </g>
           </svg>
-          
-                    Нет
-                    
+           Нет 
           <svg
             fill="none"
             height="16"
@@ -548,7 +421,6 @@ exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
               stroke="#1F1F1F"
               stroke-width="1.5"
             />
-             
             <path
               d="M8 4.5V8H10"
               stroke="#1F1F1F"
@@ -557,20 +429,13 @@ exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
               stroke-width="1.5"
             />
           </svg>
-          
-                    2 часа
-                
+           2 часа
         </div>
-        
-                Ингредиенты:
-                Говядина, картофель, капуста, лук
-                
+         Ингредиенты: Говядина, картофель, капуста, лук 
         <button
           class="btn btn-light card-body__remove-button"
         >
-          
-                    Удалить рецепт
-                
+           Удалить рецепт 
         </button>
       </div>
     </div>
@@ -584,11 +449,8 @@ exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
           class="card-body__header"
         >
           <h4>
-            
-                        Синнабон с корицей
-                    
+            Синнабон с корицей
           </h4>
-           
           <svg
             id="Layer_1"
             viewBox="0 0 463 463"
@@ -604,9 +466,7 @@ exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
               </g>
             </g>
           </svg>
-          
-                    Да
-                    
+           Да 
           <svg
             fill="none"
             height="16"
@@ -621,7 +481,6 @@ exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
               stroke="#1F1F1F"
               stroke-width="1.5"
             />
-             
             <path
               d="M8 4.5V8H10"
               stroke="#1F1F1F"
@@ -630,28 +489,22 @@ exports[`11.h.1 Recipes 11.h.1.4 add second recipe 1`] = `
               stroke-width="1.5"
             />
           </svg>
-          
-                    40 минут
-                
+           40 минут
         </div>
-        
-                Ингредиенты:
-                Пшеничная мука, дрожжи сухие, яйца куриные, молоко, масло, сахар, соль
-                
+         Ингредиенты: Пшеничная мука, дрожжи сухие, яйца куриные, молоко, масло, сахар, соль 
         <button
           class="btn btn-light card-body__remove-button"
         >
-          
-                    Удалить рецепт
-                
+           Удалить рецепт 
         </button>
       </div>
     </div>
+    
   </div>
 </div>
 `;
 
-exports[`11.h.1 Recipes 11.h.1.5 remove first recipe 1`] = `
+exports[`11.h.1 Recipes > 11.h.1.5 remove first recipe 1`] = `
 <div
   class="recipes"
 >
@@ -659,168 +512,125 @@ exports[`11.h.1 Recipes 11.h.1.5 remove first recipe 1`] = `
     class="recipe-form"
   >
     <h3>
-      
-        Создать новый рецепт
-    
+       Создать новый рецепт 
     </h3>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Название нового рецепта
-        
+         Название нового рецепта 
       </label>
-       
       <input
         class="form-control recipe-form__name"
         type="text"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Ингредиенты
-        
+         Ингредиенты 
       </label>
-       
       <textarea
         class="form-control recipe-form__ingredients"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Последовательность действий
-        
+         Последовательность действий 
       </label>
-       
       <textarea
         class="form-control recipe-form__recipe-text"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Время приготовления
-        
+         Время приготовления 
       </label>
-       
       <select
         class="form-select recipe-form__cook-time"
       >
+        
         <option
           value="1"
         >
-          
-                5 минут
-            
+          5 минут
         </option>
         <option
           value="2"
         >
-          
-                10 минут
-            
+          10 минут
         </option>
         <option
           value="3"
         >
-          
-                15 минут
-            
+          15 минут
         </option>
         <option
           value="4"
         >
-          
-                20 минут
-            
+          20 минут
         </option>
         <option
           value="5"
         >
-          
-                30 минут
-            
+          30 минут
         </option>
         <option
           value="6"
         >
-          
-                40 минут
-            
+          40 минут
         </option>
         <option
           value="7"
         >
-          
-                50 минут
-            
+          50 минут
         </option>
         <option
           value="8"
         >
-          
-                1 час
-            
+          1 час
         </option>
         <option
           value="9"
         >
-          
-                1,5 часа
-            
+          1,5 часа
         </option>
         <option
           value="10"
         >
-          
-                2 часа
-            
+          2 часа
         </option>
         <option
           value="11"
         >
-          
-                2,5 часа
-            
+          2,5 часа
         </option>
         <option
           value="12"
         >
-          
-                3 часа
-            
+          3 часа
         </option>
         <option
           value="13"
         >
-          
-                Бесконечность
-            
+          Бесконечность
         </option>
+        
       </select>
     </div>
-     
     <div
       class="recipe-form__block"
     >
@@ -828,38 +638,29 @@ exports[`11.h.1 Recipes 11.h.1.5 remove first recipe 1`] = `
         class="form-check-input"
         type="checkbox"
       />
-       
       <label
         class="form-check-label"
       >
-        
-            Вегетарианское блюдо
-        
+         Вегетарианское блюдо 
       </label>
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <button
         class="btn btn-dark recipe-form__add-button"
       >
-        
-            Добавить рецепт
-        
+         Добавить рецепт 
       </button>
     </div>
   </div>
-   
   <div
     class="recipe-container"
   >
     <h3>
-      
-        Мои рецепты
-    
+       Мои рецепты 
     </h3>
-     
+    
     <div
       class="card"
     >
@@ -870,11 +671,8 @@ exports[`11.h.1 Recipes 11.h.1.5 remove first recipe 1`] = `
           class="card-body__header"
         >
           <h4>
-            
-                        Синнабон с корицей
-                    
+            Синнабон с корицей
           </h4>
-           
           <svg
             id="Layer_1"
             viewBox="0 0 463 463"
@@ -890,9 +688,7 @@ exports[`11.h.1 Recipes 11.h.1.5 remove first recipe 1`] = `
               </g>
             </g>
           </svg>
-          
-                    Да
-                    
+           Да 
           <svg
             fill="none"
             height="16"
@@ -907,7 +703,6 @@ exports[`11.h.1 Recipes 11.h.1.5 remove first recipe 1`] = `
               stroke="#1F1F1F"
               stroke-width="1.5"
             />
-             
             <path
               d="M8 4.5V8H10"
               stroke="#1F1F1F"
@@ -916,28 +711,22 @@ exports[`11.h.1 Recipes 11.h.1.5 remove first recipe 1`] = `
               stroke-width="1.5"
             />
           </svg>
-          
-                    40 минут
-                
+           40 минут
         </div>
-        
-                Ингредиенты:
-                Пшеничная мука, дрожжи сухие, яйца куриные, молоко, масло, сахар, соль
-                
+         Ингредиенты: Пшеничная мука, дрожжи сухие, яйца куриные, молоко, масло, сахар, соль 
         <button
           class="btn btn-light card-body__remove-button"
         >
-          
-                    Удалить рецепт
-                
+           Удалить рецепт 
         </button>
       </div>
     </div>
+    
   </div>
 </div>
 `;
 
-exports[`11.h.1 Recipes 11.h.1.6 remove second recipe 1`] = `
+exports[`11.h.1 Recipes > 11.h.1.6 remove second recipe 1`] = `
 <div
   class="recipes"
 >
@@ -945,168 +734,125 @@ exports[`11.h.1 Recipes 11.h.1.6 remove second recipe 1`] = `
     class="recipe-form"
   >
     <h3>
-      
-        Создать новый рецепт
-    
+       Создать новый рецепт 
     </h3>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Название нового рецепта
-        
+         Название нового рецепта 
       </label>
-       
       <input
         class="form-control recipe-form__name"
         type="text"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Ингредиенты
-        
+         Ингредиенты 
       </label>
-       
       <textarea
         class="form-control recipe-form__ingredients"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Последовательность действий
-        
+         Последовательность действий 
       </label>
-       
       <textarea
         class="form-control recipe-form__recipe-text"
       />
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <label
         class="form-label"
       >
-        
-            Время приготовления
-        
+         Время приготовления 
       </label>
-       
       <select
         class="form-select recipe-form__cook-time"
       >
+        
         <option
           value="1"
         >
-          
-                5 минут
-            
+          5 минут
         </option>
         <option
           value="2"
         >
-          
-                10 минут
-            
+          10 минут
         </option>
         <option
           value="3"
         >
-          
-                15 минут
-            
+          15 минут
         </option>
         <option
           value="4"
         >
-          
-                20 минут
-            
+          20 минут
         </option>
         <option
           value="5"
         >
-          
-                30 минут
-            
+          30 минут
         </option>
         <option
           value="6"
         >
-          
-                40 минут
-            
+          40 минут
         </option>
         <option
           value="7"
         >
-          
-                50 минут
-            
+          50 минут
         </option>
         <option
           value="8"
         >
-          
-                1 час
-            
+          1 час
         </option>
         <option
           value="9"
         >
-          
-                1,5 часа
-            
+          1,5 часа
         </option>
         <option
           value="10"
         >
-          
-                2 часа
-            
+          2 часа
         </option>
         <option
           value="11"
         >
-          
-                2,5 часа
-            
+          2,5 часа
         </option>
         <option
           value="12"
         >
-          
-                3 часа
-            
+          3 часа
         </option>
         <option
           value="13"
         >
-          
-                Бесконечность
-            
+          Бесконечность
         </option>
+        
       </select>
     </div>
-     
     <div
       class="recipe-form__block"
     >
@@ -1114,44 +860,32 @@ exports[`11.h.1 Recipes 11.h.1.6 remove second recipe 1`] = `
         class="form-check-input"
         type="checkbox"
       />
-       
       <label
         class="form-check-label"
       >
-        
-            Вегетарианское блюдо
-        
+         Вегетарианское блюдо 
       </label>
     </div>
-     
     <div
       class="recipe-form__block"
     >
       <button
         class="btn btn-dark recipe-form__add-button"
       >
-        
-            Добавить рецепт
-        
+         Добавить рецепт 
       </button>
     </div>
   </div>
-   
   <div
     class="recipe-container"
   >
     <h3>
-      
-        Мои рецепты
-    
+       Мои рецепты 
     </h3>
-     
     <div
       class="recipe-container__no-recipes"
     >
-      
-        Рецептов нет
-    
+       Рецептов нет 
     </div>
   </div>
 </div>
