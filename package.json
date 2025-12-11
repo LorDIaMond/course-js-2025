@@ -28,7 +28,7 @@
         "fast-glob": "3.3.3",
         "globals": "16.2.0",
         "jsdom": "26.1.0",
-        "pinia": "3.0.3",
+        "pinia": "3.0.4",
         "sass-embedded": "1.89.2",
         "sinon": "^21.0.0",
         "typescript": "5.8.3",
