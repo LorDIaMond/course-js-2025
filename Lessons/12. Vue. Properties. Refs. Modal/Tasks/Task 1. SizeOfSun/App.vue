@@ -13,9 +13,15 @@
             </div>
         </div>
         <div class="sun-container__block">
-            <!-- Начало -->
+          <h3>Год:</h3>
+          <span>
+            {{ year }}
+          </span>
 
-            <!-- Конец -->
+          <h3>Диаметр солнца:</h3>
+          <span>
+            {{ diameter }} км
+          </span>
         </div>
     </div>
 </template>
@@ -35,8 +41,15 @@ export default {
         const REDUCTION_FACTOR = 0.95;
 
         const onReduceSunSize = () => {
-            //Начало
-            //Конец
+          year.value += NUM_OF_ADDITIONS_YEARS;
+          diameter.value = Math.round(diameter.value * REDUCTION_FACTOR);
+          imageWidthInPx.value = Math.round(
+              imageWidthInPx.value * REDUCTION_FACTOR
+          );
+
+          if (sun.value) {
+            sun.value.style.width = `${imageWidthInPx.value}px`;
+          }
         };
 
         return {

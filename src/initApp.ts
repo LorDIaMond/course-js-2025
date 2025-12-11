@@ -6,6 +6,7 @@ import mountVueApp from './utils/vueApp';
 import 'highlight.js/styles/default.min.css';
 
 interface IProps {
+    executeSelector: string;
     iframeSelector: string;
     lessonSelector: string;
     tasksSelector: string;
@@ -23,6 +24,7 @@ export default function initApp(payload: IProps) {
         iframeSelector: payload.iframeSelector,
         lessonSelector: payload.lessonSelector,
         tasksSelector: payload.tasksSelector,
+        executeSelector: payload.executeSelector,
         appState: state,
     });
 

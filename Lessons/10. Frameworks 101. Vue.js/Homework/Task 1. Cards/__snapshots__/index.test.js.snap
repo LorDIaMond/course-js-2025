@@ -9,6 +9,7 @@ exports[`10.h.1 Cards > 10.h.1.0 Cards 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
     />
@@ -54,6 +55,7 @@ exports[`10.h.1 Cards > 10.h.1.0 Cards 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
     />
@@ -99,6 +101,7 @@ exports[`10.h.1 Cards > 10.h.1.0 Cards 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
     />
@@ -153,6 +156,7 @@ exports[`10.h.1 Cards > 10.h.1.3 first card plus button click 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
     />
@@ -198,6 +202,7 @@ exports[`10.h.1 Cards > 10.h.1.3 first card plus button click 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
     />
@@ -243,6 +248,7 @@ exports[`10.h.1 Cards > 10.h.1.3 first card plus button click 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
     />
@@ -297,6 +303,7 @@ exports[`10.h.1 Cards > 10.h.1.4 second card minus button click 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
     />
@@ -342,6 +349,7 @@ exports[`10.h.1 Cards > 10.h.1.4 second card minus button click 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
     />
@@ -387,6 +395,7 @@ exports[`10.h.1 Cards > 10.h.1.4 second card minus button click 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
     />
@@ -441,6 +450,7 @@ exports[`10.h.1 Cards > 10.h.1.5 third card plus button two clicks 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
     />
@@ -486,6 +496,7 @@ exports[`10.h.1 Cards > 10.h.1.5 third card plus button two clicks 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
     />
@@ -531,6 +542,7 @@ exports[`10.h.1 Cards > 10.h.1.5 third card plus button two clicks 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
     />
@@ -589,6 +601,7 @@ exports[`10.h.1 Cards > 10.h.1.6 third card minus button click 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
     />
@@ -634,6 +647,7 @@ exports[`10.h.1 Cards > 10.h.1.6 third card minus button click 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
     />
@@ -679,6 +693,7 @@ exports[`10.h.1 Cards > 10.h.1.6 third card minus button click 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
     />
@@ -733,6 +748,7 @@ exports[`10.h.1 Cards > 10.h.1.7 third card minus button two more clicks 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
     />
@@ -778,6 +794,7 @@ exports[`10.h.1 Cards > 10.h.1.7 third card minus button two more clicks 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
     />
@@ -823,6 +840,7 @@ exports[`10.h.1 Cards > 10.h.1.7 third card minus button two more clicks 1`] = `
     class="card"
   >
     <img
+      alt="img"
       class="card-img-top"
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
     />

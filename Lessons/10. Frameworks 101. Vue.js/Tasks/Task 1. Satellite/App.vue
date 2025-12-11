@@ -11,7 +11,7 @@
         <div>
           {{ speed }} м/с
         </div>
-        <img src="https://mediasat.info/wp-content/uploads/2015/06/sat-orbit.jpg"">
+        <img src="https://mediasat.info/wp-content/uploads/2015/06/sat-orbit.jpg">
       </div>
     </div>
 </template>
